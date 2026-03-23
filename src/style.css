@@ -5,6 +5,8 @@
   --overlay: rgba(13, 27, 42, 0.45);
   /* 40% opaque light bar (text stays full opacity via rgba, not element opacity) */
   --header-footer-bg: rgba(248, 250, 252, 0.4);
+  /* Light green header bar (semi-transparent; navy text still readable) */
+  --header-bg: rgba(187, 247, 208, 0.55);
   --text-on-light: #0d1b2a;
   --accent-focus: #e2e8f0;
   --max-main: 960px;
@@ -63,7 +65,7 @@ body {
   width: 100%;
   max-width: none;
   margin: 0;
-  background: var(--header-footer-bg);
+  background: var(--header-bg);
   backdrop-filter: blur(6px);
 }
 
