@@ -3,7 +3,8 @@
   --navy-mid: #1b263b;
   --navy-border: #0a1220;
   --overlay: rgba(13, 27, 42, 0.45);
-  --footer-bg: rgba(248, 250, 252, 0.88);
+  /* 40% opaque light bar (text stays full opacity via rgba, not element opacity) */
+  --header-footer-bg: rgba(248, 250, 252, 0.4);
   --text-on-light: #0d1b2a;
   --accent-focus: #e2e8f0;
   --max-main: 960px;
@@ -59,10 +60,10 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem clamp(1rem, 4vw, 2rem);
-  max-width: calc(var(--max-main) + 4rem);
-  margin: 0 auto;
   width: 100%;
-  background: var(--footer-bg);
+  max-width: none;
+  margin: 0;
+  background: var(--header-footer-bg);
   backdrop-filter: blur(6px);
 }
 
@@ -186,7 +187,7 @@ body {
   margin-top: auto;
   width: 100%;
   padding: 0.875rem 1rem;
-  background: var(--footer-bg);
+  background: var(--header-footer-bg);
   text-align: center;
   backdrop-filter: blur(6px);
 }
