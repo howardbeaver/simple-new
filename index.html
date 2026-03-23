@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyVideoPlayer</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <p class="site-title">MyVideoPlayer</p>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#events">Events</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main class="main-column">
+        <div class="hero-frame">
+          <video
+            id="hero-video"
+            class="hero-video"
+            controls
+            playsinline
+            preload="metadata"
+          ></video>
+        </div>
+
+        <div class="thumb-strip" role="group" aria-label="Video clips">
+          <button
+            type="button"
+            class="thumb-btn is-active"
+            data-index="0"
+            aria-pressed="true"
+          >
+            <img src="/images/sue-vid1-thumb.png" alt="" class="thumb-img" />
+            <span class="visually-hidden">Play clip 1</span>
+          </button>
+          <button type="button" class="thumb-btn" data-index="1" aria-pressed="false">
+            <img src="/images/sue-vid2-thumb.png" alt="" class="thumb-img" />
+            <span class="visually-hidden">Play clip 2</span>
+          </button>
+          <button type="button" class="thumb-btn" data-index="2" aria-pressed="false">
+            <img src="/images/sue-vid3-thumb.png" alt="" class="thumb-img" />
+            <span class="visually-hidden">Play clip 3</span>
+          </button>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p>My Contact Information – My Social Media Links</p>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
